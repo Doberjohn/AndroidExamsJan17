@@ -13,4 +13,20 @@ public class Merchant {
     private String imageUrl;
     private String review;
 
+    public String getLegalName() {
+        return this.legalName;
+    }
+
+    public String getCategoryName() {
+        return this.legalName;
+    }
+
+    public String getAddress() {
+        return this.legalName;
+    }
+
+    public String getRating() {
+        return this.legalName;
+    }
+
 }

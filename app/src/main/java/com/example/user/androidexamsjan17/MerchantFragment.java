@@ -9,9 +9,6 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
-/**
- * Created by fanidis on 27/1/2017.
- */
 
 public class MerchantFragment extends Fragment {
 
@@ -33,7 +30,7 @@ public class MerchantFragment extends Fragment {
     }
 
     private void fetchMerchants(){
-        FetchMerchantsTask fetchMerchantsTask = new FetchMerchantsTask(merchantAdapter);
+        FetchMerchantsTask fetchMerchantsTask = new FetchMerchantsTask();
         fetchMerchantsTask.execute();
     }
 

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/yummy_logo"
+        android:id="@+id/list_item_merchant_image"
+        android:paddingTop="10dp"/>
+
+    <TextView
+        android:text="To μπαλκονάκι"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_item_merchant_legal_name"
+        android:layout_toRightOf="@id/list_item_merchant_image"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:text="Βιβλία Χαρτικά Ζωγραφική"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_item_merchant_category_name"
+        android:layout_below="@id/list_item_merchant_legal_name"
+        android:layout_toRightOf="@id/list_item_merchant_image"
+        android:textSize="17dp"/>
+
+    <TextView
+        android:text="Μητρ.Γρεβενών Αιμιλιανού 6"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_item_merchant_address"
+        android:layout_below="@id/list_item_merchant_category_name"
+        android:layout_toRightOf="@id/list_item_merchant_image"
+        android:textSize="17dp"/>
+
+    <TextView
+        android:text="45"
+        android:layout_width="26dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_item_merchant_rating"
+        android:layout_below="@id/list_item_merchant_category_name"
+        android:layout_toRightOf="@id/list_item_merchant_address"
+        android:textSize="17dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/star"
+        android:layout_below="@id/list_item_merchant_category_name"
+        android:layout_toRightOf="@id/list_item_merchant_rating"
+        android:id="@+id/star_logo" />
+</RelativeLayout>

@@ -5,6 +5,8 @@ import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -29,13 +31,17 @@ public class MainActivity extends AppCompatActivity {
     }
 }
 
-public class FetchMerchantsTask extends AsyncTask<String,Void,ArrayList<Merchant>> {
+class FetchMerchantsTask extends AsyncTask<String,Void,ArrayList<Merchant>> {
 
     private final String LOG_TAG = FetchMerchantsTask.class.getSimpleName();
     private MerchantAdapter merchantAdapter;
-    public static final String YUMMY_BASE_DOMAIN = "http://dev.savecash.gr:3000";
+    public static final String YUMMY_BASE_DOMAIN = "https://dev.savecash.gr:3000";
 
     public FetchMerchantsTask( MerchantAdapter merchantAdapter){
+        this.merchantAdapter = merchantAdapter;
+    }
+
+    public FetchMerchantsTask(){
         this.merchantAdapter = merchantAdapter;
     }
 
